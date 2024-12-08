@@ -1,0 +1,23 @@
+/* Table styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Audio player styling */
+audio {
+  width: 10px; /* Adjust the width of the audio player */
+  height: 30px; /* Optional: adjust the height */
+}
+

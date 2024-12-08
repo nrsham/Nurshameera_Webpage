@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>My Education Background</h2>
+</div>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#e590b5;">
+    SK
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#ec65a0;">
+    SMK
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#dc2687;">
+    DIPLOMA
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:#e590b5">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><a href="https://www.facebook.com/p/SK-Telok-Pulai-100063699754117/?locale=ms_MY">Sekolah Kebangsaan Telok Pulai</a></h2>
+  <p>SK Telok Pulai was opened on 4 June 1987 with the original name of Sekolah Kebangsaan Sungai Bertek. This school is 
+    located 5km from Klang City. I have attended school there for 6 years and managed to finish school with distinction.
+  I was a librarian back at my elementary school. I pour all my youth and dedication while I'm schooling there.</p>
+  <img src="image/sktp.jpg" style="width: 48%;">
+  <img src="image/sktelokpulai.jpg" style="width: 40%;">
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#ec65a0">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><a href="https://www.facebook.com/smkckconventklang/?locale=ms_MY">Sekolah Menengah Kebangsaan Convent Klang</a></h2>
+  <p>The school is located at Jalan Tengku Kelana adjacent to the Church of Our Lady Of Lourdes. 
+  It was established in 1924 and main school building was built around the year 1926 to 1928.
+  I first joined the school at 2017 at placed in V class. It was a all-girls school, so it was easy for me to find new friends.
+  I have joined a lots of school activities and is active in cocuriculum. I made lots of memories and I personally think
+  my highschool era is the best one yet!</p>
+  <img src="image/smk1.jpg" style="width: 42%;">
+  <img src="image/smkck.jpg" style="width: 26%;">
+  <img src="image/smk2.jpg" style="width: 25%;">
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#dc2687">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><a href="https://www.facebook.com/UiTMKampusRembau/?locale=ms_MY">UiTM Campus Rembau</a></h2>
+  <p>UiTM Negeri Sembilan Branch is one of the branches of MARA University of Technology established in Negeri Sembilan, Malaysia. 
+    Rembau Campus is the newest UiTM campus in Negeri Sembilan and it was established in 2017. 
+    Currently, I'm continuing my diploma in Information Management at Uitm Rembau and already in my final semester. 
+    However, after finish with my diploma, I'm planning to further study degree in record management.</p>
+  <img src="image/rembau.jpg" style="width: 26%;">
+  <img src="image/rembaupic.jpg" style="width: 36%;">
+  <img src="image/rembau2.jpg" style="width: 20%;">
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html> 

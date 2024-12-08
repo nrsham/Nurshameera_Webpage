@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Add background color outside the boxes */
+        body {
+            background-color: lightpink; 
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to hold the columns */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Column styles */
+        .column {
+            width: 30%; /* Each column takes up 30% of the container's width */
+            background-color: #f4f4f4; /* Light background for the boxes */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px; /* Adds space between rows */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+        }
+
+        /* Styling for the header */
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        /* Icon styling */
+        .icon {
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .icon a {
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+        }
+
+        /* Image styling */
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .column {
+                width: 100%; /* Full-width columns on smaller screens */
+            }
+        }
+
+        /* Center-align audio and video */
+        audio, video {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sports Column -->
+        <div class="column">
+            <h2>Sport</h2>
+            <p>Formula One is a global phenomenon loved for its high-speed thrills, cutting-edge technology, and intense rivalries. It combines the excitement of drivers pushing limits at over 200 mph with unpredictable races where strategy, weather, and precision engineering can change outcomes in seconds.</p>
+            <video width="250" controls>
+                <source src="video/f1edit.MP4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <p>I've started to like f1 was actually back in July 2023 after watching it together with my cousins.
+              It was such mix of adrenaline pumping action, incredible driver skills, and cutting-edge technology. The sport’s drama, glamorous and diverse personalities make it exciting and relatable.
+            </p>
+            <img src="image/carlos.jpg">
+            <video width="250" controls>
+                <source src="video/editf1.MP4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <p>Check out more about <a href="https://www.formula1.com/" target="_blank">Formula One</a>.</p>
+        </div>
+
+        <!-- Reading Column -->
+        <div class="column">
+            <h2>Reading</h2>
+            <p>Books provide a safe space to connect with relatable characters, dream of adventures, and experience stories that inspire or comfort.</p>
+            <video width="250" controls>
+                <source src="video/reading.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <p>I've been reading since I was six, and it's always nurtured my creativity and imagination. It's not just about the stories but the calm and growth that comes with it.</p>
+            <img src="image/hobiread.jpg" alt="Reading Hobby">
+            <p>Girls enjoy reading because it offers a peaceful escape and a way to explore different worlds and emotions.</p>
+        </div>
+
+        <!-- Singing Column -->
+        <div class="column">
+            <h2>Singing</h2>
+            <p>During a time of self-discovery, music becomes a powerful outlet for feelings, whether it's joy, sadness, or excitement. Singing also lets me explore creativity and individuality while having fun.</p>
+            <img src="image/catsing.jpg">
+            
+            <!-- Headphone Icon with Link -->
+            <div class="icon">
+                <a href="songs.html" title="Go to next page">
+                    🎧
+                </a>
+                <p><small>Click the icon to see my favorite songs!</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

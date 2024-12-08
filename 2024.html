@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 Family Photos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(image/picbg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: transparent;
+      color: black;
+      text-align: center;
+      padding: 10px;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .back-link {
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+      background-color: deeppink;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .back-link:hover {
+      background-color: hotpink;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Photos of 2024</h1>
+  </header>
+  <main>
+    <div class="photo-grid">
+      <img src="image/2024.1.jpg" alt="Family Photo 1">
+      <img src="image/2024.2.jpg" alt="Family Photo 2">
+      <img src="image/2024.3.jpg" alt="Family Photo 3">
+      <img src="image/2024.4.jpg" alt="Family Photo 4">
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </main>
+</body>
+</html>

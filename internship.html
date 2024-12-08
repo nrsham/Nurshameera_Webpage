@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url(image/videobg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      color: white;
+      height: 100vh; /* Ensure the body takes full viewport height */
+      display: flex; /* Use flexbox on the body */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+    }
+
+    .video-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .video-card {
+      background: #282828;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 450px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-card video {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .video-details {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .video-details h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #ffcc00;
+    }
+
+    .video-details p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #bbbbbb;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="video-section">
+    <div class="video-card">
+      <video onclick="playPause(this)" controls poster="image/video1-poster.jpg">
+        <source src="video/hikingvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-details">
+        <h3>Memorable Adventure</h3>
+        <p>Experience the thrill of our hiking trip in 2024.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <video onclick="playPause(this)" controls poster="image/video2-poster.jpg">
+        <source src="video/muhibbin.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-details">
+        <h3>Internships Journey</h3>
+        <p>Enjoying my internships to the fullest.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Interactive Play/Pause on Click
+    function playPause(video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  </script>
+
+</body>
+</html>

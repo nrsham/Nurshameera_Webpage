@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myself</title>
+  <style>
+    /* General styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url(image/starbg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fullscreen container */
+    .fullscreen-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150vh; /* Fullscreen height */
+    }
+
+    /* Image grid styling */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+      gap: 20px; /* Space between images */
+      width: 90%; /* Adjust width of the grid */
+      max-width: 1200px; /* Limit grid width */
+    }
+
+    /* Individual image styling */
+    .image-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect for images */
+    .image-item:hover img {
+      transform: scale(1.1); /* Slight zoom effect */
+    }
+  </style>
+</head>
+<body>
+
+<div class="fullscreen-container">
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="image/infp1.jpg" alt="Picture 1">
+    </div>
+    <div class="image-item">
+      <img src="image/infp2.jpg" alt="Picture 2">
+    </div>
+    <div class="image-item">
+      <img src="image/infp3.jpg" alt="Picture 3">
+    </div>
+    <div class="image-item">
+      <img src="image/infp4.jpg" alt="Picture 4">
+    </div>
+    <div class="image-item">
+      <img src="image/infp5.jpg" alt="Picture 5">
+    </div>
+    <div class="image-item">
+      <img src="image/infp6.jpg" alt="Picture 6">
+    </div>
+    <div class="image-item">
+      <img src="image/infp7.jpg" alt="Picture 7">
+    </div>
+    <div class="image-item">
+      <img src="image/infp8.jpg" alt="Picture 7">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

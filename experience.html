@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    background-image: url(image/kirbybg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+
+  /* Flip container */
+  .flip-container {
+    display: inline-block;
+    perspective: 1000px;
+    margin: 10px;
+  }
+
+  .flip-card {
+    width: 180px;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-container:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .flip-card-back {
+    background-color: #f8f9fa;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+
+  /* Dot indicators */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  q {
+    font-style: italic;
+  }
+
+  .author {
+    color: cornflowerblue;
+  }
+
+</style>
+</head>
+<body>
+
+  <p style="font-size: xx-small;">Click on the BIG picture</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+      <img src="image/experience1.jpg" alt="Experience 1">
+      </div>
+      <div class="flip-card-back">
+        <p>An amazing hiking trip at Bukit Batu Putih, Negeri Sembilan</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="image/experience1.1.jpg" alt="Experience 1.1">
+      </div>
+      <div class="flip-card-back">
+        <p>Dance competition for National Kesatria</p>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <q>Only those who will risk going too far can possibly find out how far one can go.</q>
+  <p class="author">- T.S. Eliot</p>
+</div>
+
+<div class="mySlides">
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="image/experience2.3.jpg" alt="Experience 2.3">
+      </div>
+      <div class="flip-card-back">
+        <p>NCT DREAM THE MOVIE: In A Dream</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="image/experience2.jpg" alt="Experience 2">
+      </div>
+      <div class="flip-card-back">
+        <p>Kang Daniel Fanmeeting back in 2019</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="image/experience2.1.jpg" alt="Experience 2.3">
+      </div>
+      <div class="flip-card-back">
+        <p>NCT NATION: To The World In Cinemas</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-front">
+        <img src="image/experience2.2.jpg" alt="Experience 2">
+      </div>
+      <div class="flip-card-back">
+        <p>Taylor Swift: The Eras Tour Movie</p>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <q>Life is really simple, but we insist on making it complicated.</q>
+  <p class="author">- Confucius</p>
+</div>
+
+<div class="mySlides">
+    <div class="flip-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="image/experience3.1.jpg" alt="Experience 2.3">
+        </div>
+        <div class="flip-card-back">
+          <p>My internship friends</p>
+        </div>
+      </div>
+    </div>
+    <a href="internship.html">
+      <img src="image/experience3.jpg" style="width: 45%;">
+    </a>
+    <div class="flip-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="image/experience3.2.jpg" alt="Experience 2.3">
+        </div>
+        <div class="flip-card-back">
+          <p>First day of my internship</p>
+        </div>
+      </div>
+    </div>
+    <p></p>
+    <q>The only way to do great work is to love what you do.</q>
+    <p class="author">- Steve Jobs</p>
+  </div>
+
+  <div class="mySlides">
+    <div class="flip-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="image/experience4.jpg" alt="Experience 2.3">
+        </div>
+        <div class="flip-card-back">
+          <p>My first job at 7Eleven</p>
+        </div>
+      </div>
+    </div>
+    <a href="work.html">
+      <img src="image/experience4.1.jpg" style="width: 50%;">
+    </a>
+    <div class="flip-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="image/experience4.2.jpg" alt="Experience 2.3">
+        </div>
+        <div class="flip-card-back">
+          <p>Voluntered at vaccine centre</p>
+        </div>
+      </div>
+    </div>
+    <p></p>
+    <q>Without ambition, one starts nothing. Without work, one finishes nothing.</q>
+    <p class="author">- Ralph Waldo Emerson</p>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

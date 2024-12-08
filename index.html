@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Family Photo Album</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(image/picbg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: black;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px auto;
+      max-width: 80%;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      color: #4caf50;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: deeppink;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .photo-grid img:hover {
+      transform: scale(1.1);
+    }
+    .photo-grid figcaption {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+      background-color: deeppink;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .back-link:hover {
+      background-color: hotpink;
+    }
+    @media screen and (max-width: 768px) {
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Family Photos Album</h1>
+  </header>
+  <nav>
+    <a href="2021.html">2021</a> |
+    <a href="2022.html">2022</a> |
+    <a href="2023.html">2023</a> |
+    <a href="2024.html">2024</a>
+  </nav>
+  <main>
+    <div class="photo-grid">
+      <figure>
+        <img src="image/fam2022.1.jpg" alt="Family Photo 1">
+        <figcaption>New Year Celebration</figcaption>
+      </figure>
+      <figure>
+        <img src="image/Raya1.jpg" alt="Family Photo 2">
+        <img src="image/Raya2.jpg" alt="Family Photo 2">
+        <img src="image/Raya4.jpg" alt="Family Photo 2">
+        <figcaption>Eid Celebration</figcaption>
+      </figure>
+      <figure>
+        <img src="image/2023.5.jpg" alt="Family Photo 3">
+        <figcaption>Family Vacation</figcaption>
+      </figure>
+      <figure>
+        <img src="image/2024.3.jpg" alt="Family Photo 4">
+        <figcaption>Theatre Day</figcaption>
+      </figure>
+      <figure>
+        <img src="image/birthday.jpg" alt="Family Photo 5">
+        <figcaption>Birthday Celebration</figcaption>
+      </figure>
+    </div>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </main>
+</body>
+</html>
